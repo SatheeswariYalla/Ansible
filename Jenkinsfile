@@ -6,17 +6,14 @@ pipeline {
 
   }
   stages {
-    stage('Dev 1') {
+    stage('Dev') {
       steps {
-        retry(count: 5) {
-          sh 'echo "hello Dev"'
-        }
-
+        sh 'echo "Hello Dev"'
       }
     }
     stage('Test') {
       steps {
-        sh 'echo "Hello Test"'
+        sh 'echo " Hello Test"'
       }
     }
   }
